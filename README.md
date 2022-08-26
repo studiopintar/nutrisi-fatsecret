@@ -8,7 +8,7 @@ Here are some feature that this API offers you
 
 ### Multi Lang Multi Food
 
-Some food are only available on your language, since Fat Secret had many [languages](https://www.fatsecret.co.id/Default.aspx?pa=sites) I tried to implement it as multi lang. However it still need some work. Since I only speak English and Indonesia for now it only support those two. You can make a pull request support your language!
+Some food are only available on your language, since Fat Secret had many [languages](https://www.fatsecret.co.id/Default.aspx?pa=sites)
 
 ### Search Food
 
@@ -26,7 +26,9 @@ GET api/:lang/search?query=tempe&page=0
 Print the detail of food that you're looking for
 
 ```http
-GET api/:lang/detail
+GET api/:lang/detail?url=%2Fkalori-gizi%2Fumum%2Ftempe-goreng
+
+# url: URL detailLink of the selected food (Acquired from search query before)
 ```
 
 ## Contribute
